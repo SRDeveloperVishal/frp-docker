@@ -1,0 +1,9 @@
+serverAddr = "40.81.224.57"
+serverPort = 7000
+[[proxies]]
+name = "frps_rcmoocs_in"
+type = "http"
+localIP = "192.168.1.15"
+localPort = 80
+customDomains = [ "frps.rcmoocs.in",]
+

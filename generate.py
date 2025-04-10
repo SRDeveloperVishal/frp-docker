@@ -19,7 +19,7 @@ def parse_hosts():
             proxies.append({
                 "name": name,
                 "type": "http",
-                "localIP": domain,  # resolved from /etc/hosts
+                "localIP": ip,  # resolved from /etc/hosts
                 "localPort": 80,
                 "customDomains": [domain]
             })
