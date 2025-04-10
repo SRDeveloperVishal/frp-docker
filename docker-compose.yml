@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  frpc-gateway:
+    build: .
+    container_name: frpc-gateway
+    volumes:
+      - ./data:/frp/data
+      - ./config:/frp/config
+    network_mode: host  # or bridge with correct forwarding
