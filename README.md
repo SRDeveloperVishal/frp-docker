@@ -70,7 +70,7 @@ Dockerize version of fast reverse proxy that allows you to expose a local server
 ```bash
   :wq
 ```
-#### Go inside host file
+#### Edit host file
 
 ```bash
   vim data/hosts
