@@ -44,6 +44,12 @@ Dockerize version of fast reverse proxy that allows you to expose a local server
 ```bash
   docker compose -f server.yml up -d
 ``` 
+
+## Access frps dashboard
+```bash
+  public_ip:7500
+```
+
 ## Setup FRP Client
 #### Clone project
 ```bash 
