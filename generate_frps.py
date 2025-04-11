@@ -32,7 +32,7 @@ def generate_config():
         "addr": "0.0.0.0",
         "port": 7500,
         "user": user,
-        "passwword": passwd
+        "password": passwd
     }
     }
 
