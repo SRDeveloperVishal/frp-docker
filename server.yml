@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  frps-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile.frps
+    container_name: frps-gateway
+    volumes:
+      - ./config:/frp/config
+    network_mode: host  # or bridge with correct forwarding

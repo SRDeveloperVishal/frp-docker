@@ -1,0 +1,18 @@
+# Dockerfile.frps
+FROM python:3.10-alpine
+
+WORKDIR /frp
+
+# Install toml & dotenv lib
+RUN pip install toml
+
+RUN pip install python-dotenv
+
+# Copy files
+COPY frps /frp/frps
+COPY generate_frps.py /frp/generate_frps.py
+COPY entrypoint.frps.sh /frp/entrypoint.frps.sh
+
+RUN chmod +x /frp/frps /frp/entrypoint.frps.sh
+
+ENTRYPOINT ["/frp/entrypoint.frps.sh"]
