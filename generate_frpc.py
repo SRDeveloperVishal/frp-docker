@@ -45,13 +45,9 @@ def generate_config():
     if not server_addr:
         raise ValueError("FRP_SERVER_ADDR is not set in the environment.")
     
-    server_port = os.getenv("FRP_SERVER_PORT")
-    if not server_port:
-        raise ValueError("FRP_SERVER_PORT is not set in the environment.")
-    
     config = {
         "serverAddr": server_addr,  # or any FRPS public IP/domain
-        "serverPort": server_port,
+        "serverPort": 7000,
         "proxies": parse_hosts(),
          "auth": {
         "method": "token",

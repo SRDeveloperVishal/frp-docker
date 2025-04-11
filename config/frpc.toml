@@ -1,0 +1,33 @@
+serverAddr = "40.81.224.57"
+serverPort = 7000
+[[proxies]]
+name = "new_rcmoocs_in_http"
+type = "http"
+localIP = "192.168.1.6"
+localPort = 80
+customDomains = [ "new.rcmoocs.in",]
+
+[[proxies]]
+name = "new_rcmoocs_in_https"
+type = "https"
+localIP = "192.168.1.6"
+localPort = 443
+customDomains = [ "new.rcmoocs.in",]
+
+[[proxies]]
+name = "frps_rcmoocs_in_http"
+type = "http"
+localIP = "192.168.1.6"
+localPort = 80
+customDomains = [ "frps.rcmoocs.in",]
+
+[[proxies]]
+name = "frps_rcmoocs_in_https"
+type = "https"
+localIP = "192.168.1.6"
+localPort = 443
+customDomains = [ "frps.rcmoocs.in",]
+
+[auth]
+method = "token"
+token = "8d8fbca8c03b3c29c9b63980b9c47916"

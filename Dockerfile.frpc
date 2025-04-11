@@ -3,6 +3,7 @@ FROM python:3.10-alpine
 
 WORKDIR /frp
 
+COPY .env /frp/.env
 # Install toml & dotenv lib
 RUN pip install toml
 
